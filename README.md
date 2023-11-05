@@ -9,67 +9,64 @@ Create a django file management app using the rest framework. It needs to have t
 - All users can upload, view and manage their respective files and folders in the dashboard.
 - Under the same company, users can share files/ documents and assign document tasks to each other.
 
-Project Description:
+**Project Description:**
 
-File Management System using Django REST Framework
+**File Management System using Django REST Framework**
 
 This Django-based File Management System is designed to streamline file handling for businesses with distinct user roles - Owners and Staff. The application provides an intuitive interface for file uploads, organization, and sharing, ensuring efficient collaboration within a company. Users are categorized into Owners and Staff members, with Owners having the authority to manage staff, while both user groups can upload, view, and manage their files and folders. Additionally, within the same company, users can share files and assign document-related tasks, enhancing teamwork and productivity.
 
-API Summary:
+**API Summary:**
 
-Owner Registration:
+1. **Owner Registration:**
+   - **Endpoint:** `/owner/registration/`
+   - **Description:** Allows Owners to register and create their accounts.
 
-Endpoint: /owner/registration/
-Description: Allows Owners to register and create their accounts.
-Staff Registration:
+2. **Staff Registration:**
+   - **Endpoint:** `/staff/registration/`
+   - **Description:** Enables Staff members to register under an Owner's account.
 
-Endpoint: /staff/registration/
-Description: Enables Staff members to register under an Owner's account.
-Email Verification:
+3. **Email Verification:**
+   - **Endpoint:** `/verify/email/`
+   - **Description:** Verifies the user's email address.
 
-Endpoint: /verify/email/
-Description: Verifies the user's email address.
-User Login:
+4. **User Login:**
+   - **Endpoint:** `/login/`
+   - **Description:** Allows users to log in to their accounts.
 
-Endpoint: /login/
-Description: Allows users to log in to their accounts.
-User Logout:
+5. **User Logout:**
+   - **Endpoint:** `/logout/`
+   - **Description:** Logs the user out, terminating the session.
 
-Endpoint: /logout/
-Description: Logs the user out, terminating the session.
-Forgot Password:
+6. **Forgot Password:**
+   - **Endpoint:** `/forgot/password/`
+   - **Description:** Handles password recovery requests.
 
-Endpoint: /forgot/password/
-Description: Handles password recovery requests.
-Set New Password:
+7. **Set New Password:**
+   - **Endpoint:** `/set/new/password/`
+   - **Description:** Allows users to set a new password after recovery.
 
-Endpoint: /set/new/password/
-Description: Allows users to set a new password after recovery.
-Company Registration:
+8. **Company Registration:**
+   - **Endpoint:** `/CompanyRegistration/`
+   - **Description:** Permits Owners to register their companies.
 
-Endpoint: /CompanyRegistration/
-Description: Permits Owners to register their companies.
-Add Staff to Company:
+9. **Add Staff to Company:**
+   - **Endpoint:** `/AddStaffToCompany/`
+   - **Description:** Allows Owners to add staff members to their companies.
 
-Endpoint: /AddStaffToCompany/
-Description: Allows Owners to add staff members to their companies.
-File Upload:
+10. **File Upload:**
+    - **Endpoint:** `/FileUploadAPI/`
+    - **Description:** Enables all users to upload files to their respective accounts.
 
-Endpoint: /FileUploadAPI/
-Description: Enables all users to upload files to their respective accounts.
-File Transfer:
+11. **File Transfer:**
+    - **Endpoint:** `/fileTransfer/`
+    - **Description:** Allows users to transfer files to other staff members within the same company.
 
-Endpoint: /fileTransfer/
-Description: Allows users to transfer files to other staff members within the same company.
-File List View:
+12. **File List View:**
+    - **Endpoint:** `/FileListView/`
+    - **Description:** Displays a list of files belonging to the authenticated user.
 
-Endpoint: /FileListView/
-Description: Displays a list of files belonging to the authenticated user.
-Total APIs: 12
+Total APIs:** 12
 
 This File Management System provides a robust and secure platform for businesses to handle their documents efficiently, fostering collaboration and enhancing productivity among team members.
-
-
-
 
  
